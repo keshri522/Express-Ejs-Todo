@@ -1,0 +1,44 @@
+<%- include("header") -%>
+  
+        <div class="">
+            <div class="box1" id="heading1">          
+                <h1 style="color: olive;">
+                    <%= DateFormat %>
+                </h1>
+            </div> 
+        <div class="box" id="heading">      
+            <h1>
+                <%= ListTitle %>
+            </h1>
+        </div>
+      
+        <!-- for rendering the all items in aray or user added -->
+        <div class="box">
+
+            <% defaultItems.forEach((obj)=>{%>
+                <form action="/delete" method="post">
+                    <div class="item none">
+                        <!-- here we make  the checkbox as the function of submit when check by add onchange function -->
+                        <input type="checkbox" name="checked" value="<%= obj._id %>" onchange="this.form.submit()">
+                        <p class="item none">
+                            <%= obj.name %>
+                        </p>
+                    </div>
+                    
+                    <!-- it is added to know user are on which page to simply perform delete operations -->
+                    
+                    <input type="hidden" name="route" id="" value="<%= ListTitle %>" >
+                </form>
+                <% })%>
+
+
+                    <form action="/" method="post">
+                        <input type="text" name="additem" id="" placeholder="Add Items " autocomplete="off">
+                        <button class="btn btn-danger" type="submit" name="list" value=<%=ListTitle %>>
+                            <i class="fa-regular fa-plus"></i>
+                        </button>
+                    </form>
+        </div>
+    </div>
+
+    <%-include("footer") -%>

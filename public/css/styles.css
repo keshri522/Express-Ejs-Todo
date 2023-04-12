@@ -1,0 +1,135 @@
+body {
+  background-color: #cad0ea;
+  /* background-image: -webkit-linear-gradient(65deg,#d1ccc0 50%,#778beb 50%); */
+  /* background-image: url("https://images.unsplash.com/photo-1598791318878-10e76d178023?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-image: linear-gradient(pink,rgb(169, 231, 169),rgb(227, 227, 238));
+  
+  min-height: 1000px;
+  font-family: 'helvetica neue';
+
+}
+
+h1 {
+  color: #fff;
+  padding: 8px;
+}
+
+.box {
+  max-width: 50%;
+  min-width: 300px; 
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap;
+}
+
+#heading {
+  background-color: #A683E3;
+  text-align: center;
+}
+#heading1 {
+  border: none;
+  text-align: center;
+}
+.box1{
+  width: 50%;
+  margin: 50px auto;
+  border: none;
+     min-width: 300px;
+  flex-wrap: wrap;
+}
+
+.item {
+  min-height: 70px;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+  width: 100%;
+  display: flex;
+  
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+}
+
+input[type="checkbox"]{
+  margin: 20px;
+}
+
+p {
+  width: 100%;
+margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color:#706fd3;
+  font-family: monospace;
+
+}
+
+form {
+  text-align: center;
+  margin-left: 20px;
+}
+
+
+button:hover{
+  background-color: #706fd3;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 80%;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow:  inset  0 -2px 0 0 #A683E3;
+  background-color: #dfe6e9;
+}
+
+::placeholder {
+ color:darkolivegreen;
+  opacity: 1;
+  
+}
+
+footer {
+    color: black;
+    font-size: 15px;
+  text-align: center;
+}
+
+.vis{
+  font-weight: 800;
+}
+.icons{
+  margin: 8px;
+  font-size: 30px;
+/* transition: all ease-in-out 0.2s; */
+
+}
+.width{
+  width: 50%;
+  min-width: 300px;
+  text-align: center;
+}
+
+
+
