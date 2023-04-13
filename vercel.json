@@ -5,8 +5,16 @@
         {
             "src":"/","dest":"/app.js","methods":["POST","GET"]
         }
-    ]
-
+    ],
+    "builds": [
+        {
+          "src": "/app.js",
+          "use": "@nuxtjs/vercel-builder",
+          "config": {
+            "serverFiles": ["package.json"]
+          }
+        }
+      ]
   
 
   }
